@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b5odxookhhcnh"
+path="res://.godot/imported/MISC_SnakeInGreaves.mp3-c8e212d2f390066a08b93ef715d205e3.mp3str"
+
+[deps]
+
+source_file="res://_ Assets/sfx/Voiceovers/MISC_SnakeInGreaves.mp3"
+dest_files=["res://.godot/imported/MISC_SnakeInGreaves.mp3-c8e212d2f390066a08b93ef715d205e3.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

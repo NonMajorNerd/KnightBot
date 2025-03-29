@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ban71pmk4rqog"
+path="res://.godot/imported/ERROR_DidIFallAsleep.mp3-6a3493f9a94e9f469f363b23f153ad0d.mp3str"
+
+[deps]
+
+source_file="res://_ Assets/sfx/Voiceovers/ERROR_DidIFallAsleep.mp3"
+dest_files=["res://.godot/imported/ERROR_DidIFallAsleep.mp3-6a3493f9a94e9f469f363b23f153ad0d.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://k5soou4u6565"
+path="res://.godot/imported/GREETING_OVERFLOW_HelloEveryone.mp3-3636d1ad20313f07f4040befb71afbe2.mp3str"
+
+[deps]
+
+source_file="res://_ Assets/sfx/Voiceovers/GREETING_OVERFLOW_HelloEveryone.mp3"
+dest_files=["res://.godot/imported/GREETING_OVERFLOW_HelloEveryone.mp3-3636d1ad20313f07f4040befb71afbe2.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

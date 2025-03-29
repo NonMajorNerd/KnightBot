@@ -1,0 +1,50 @@
+[gd_scene load_steps=6 format=3 uid="uid://7lvm46gl0l6w"]
+
+[ext_resource type="Script" uid="uid://rqgjlmiqcb61" path="res://scenes/ShowChar/ShowChar.gd" id="1_4qcgm"]
+[ext_resource type="PackedScene" uid="uid://bgyu3k6ck37u0" path="res://Components/Character Card/CharacterCard.tscn" id="2_unrsa"]
+[ext_resource type="AudioStream" uid="uid://cv5sqpdfdphs0" path="res://_ Assets/sfx/Multi Dice.mp3" id="3_ylpu4"]
+
+[sub_resource type="Animation" id="Animation_hmlxm"]
+resource_name = "slide"
+length = 1.3
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CharacterCard:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1, 1.2),
+"transitions": PackedFloat32Array(3.73, 2.21, 1),
+"update": 0,
+"values": [Vector2(760, 1180), Vector2(760, 640), Vector2(760, 660)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_baonu"]
+_data = {
+&"slide": SubResource("Animation_hmlxm")
+}
+
+[node name="ShowChar" type="Node2D"]
+position = Vector2(0, -11.7785)
+script = ExtResource("1_4qcgm")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_baonu")
+}
+
+[node name="Timer" type="Timer" parent="."]
+one_shot = true
+
+[node name="CharacterCard" parent="." instance=ExtResource("2_unrsa")]
+offset_left = 760.0
+offset_top = 1180.0
+offset_right = 760.0
+offset_bottom = 1180.0
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_ylpu4")
+bus = &"SFX"
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

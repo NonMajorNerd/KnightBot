@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c01g7070arwto"
+path="res://.godot/imported/FOM_TICKETS_AFOMChallengeOpened.mp3-c6ae8882f1d0982d0594e8f9372adf50.mp3str"
+
+[deps]
+
+source_file="res://_ Assets/sfx/Voiceovers/FOM_TICKETS_AFOMChallengeOpened.mp3"
+dest_files=["res://.godot/imported/FOM_TICKETS_AFOMChallengeOpened.mp3-c6ae8882f1d0982d0594e8f9372adf50.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

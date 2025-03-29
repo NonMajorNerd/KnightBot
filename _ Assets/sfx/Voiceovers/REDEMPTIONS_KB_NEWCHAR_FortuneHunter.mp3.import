@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c2lcpjtspw5d5"
+path="res://.godot/imported/REDEMPTIONS_KB_NEWCHAR_FortuneHunter.mp3-942219550e03d7c93fdc284d8a135568.mp3str"
+
+[deps]
+
+source_file="res://_ Assets/sfx/Voiceovers/REDEMPTIONS_KB_NEWCHAR_FortuneHunter.mp3"
+dest_files=["res://.godot/imported/REDEMPTIONS_KB_NEWCHAR_FortuneHunter.mp3-942219550e03d7c93fdc284d8a135568.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

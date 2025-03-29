@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dvix51g4mlgxw"
+path="res://.godot/imported/FREYA_HonorableDoggo.mp3-039519efee30386c2a7ec48d87e6b136.mp3str"
+
+[deps]
+
+source_file="res://_ Assets/sfx/Voiceovers/FREYA_HonorableDoggo.mp3"
+dest_files=["res://.godot/imported/FREYA_HonorableDoggo.mp3-039519efee30386c2a7ec48d87e6b136.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

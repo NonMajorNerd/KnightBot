@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c8nedidenc4mn"
+path="res://.godot/imported/MISC_INSULT_DogFlower.mp3-aea55f9584cd46df39fc8ac97c7de74f.mp3str"
+
+[deps]
+
+source_file="res://_ Assets/sfx/Voiceovers/MISC_INSULT_DogFlower.mp3"
+dest_files=["res://.godot/imported/MISC_INSULT_DogFlower.mp3-aea55f9584cd46df39fc8ac97c7de74f.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://e86owxuqphut"
+path="res://.godot/imported/MISC_BUCKETS_COMMAND_ToolOfCrime.mp3-05e47ee1b8d6e4b0228771d38851db76.mp3str"
+
+[deps]
+
+source_file="res://_ Assets/sfx/Voiceovers/MISC_BUCKETS_COMMAND_ToolOfCrime.mp3"
+dest_files=["res://.godot/imported/MISC_BUCKETS_COMMAND_ToolOfCrime.mp3-05e47ee1b8d6e4b0228771d38851db76.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

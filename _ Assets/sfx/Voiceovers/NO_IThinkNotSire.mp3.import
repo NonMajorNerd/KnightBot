@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c66xbuqpsxxdg"
+path="res://.godot/imported/NO_IThinkNotSire.mp3-f6e398bea1228005e0df41901f2600ec.mp3str"
+
+[deps]
+
+source_file="res://_ Assets/sfx/Voiceovers/NO_IThinkNotSire.mp3"
+dest_files=["res://.godot/imported/NO_IThinkNotSire.mp3-f6e398bea1228005e0df41901f2600ec.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

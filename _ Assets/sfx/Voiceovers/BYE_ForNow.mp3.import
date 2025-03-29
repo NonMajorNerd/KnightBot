@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cegptxelv4oam"
+path="res://.godot/imported/BYE_ForNow.mp3-f53dd8e31686590d90701e5fa74e8b1b.mp3str"
+
+[deps]
+
+source_file="res://_ Assets/sfx/Voiceovers/BYE_ForNow.mp3"
+dest_files=["res://.godot/imported/BYE_ForNow.mp3-f53dd8e31686590d90701e5fa74e8b1b.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

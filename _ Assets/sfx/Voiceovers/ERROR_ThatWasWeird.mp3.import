@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://crjgbwh0tlq3a"
+path="res://.godot/imported/ERROR_ThatWasWeird.mp3-130a2a7066a90664e9c269170eaac545.mp3str"
+
+[deps]
+
+source_file="res://_ Assets/sfx/Voiceovers/ERROR_ThatWasWeird.mp3"
+dest_files=["res://.godot/imported/ERROR_ThatWasWeird.mp3-130a2a7066a90664e9c269170eaac545.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

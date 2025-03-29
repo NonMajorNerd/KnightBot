@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cfv5u0gtas76s"
+path="res://.godot/imported/ERROR_OVERFLOW_Ignoring.mp3-91a16a9a33694d3b38f5cf25d4b90bff.mp3str"
+
+[deps]
+
+source_file="res://_ Assets/sfx/Voiceovers/ERROR_OVERFLOW_Ignoring.mp3"
+dest_files=["res://.godot/imported/ERROR_OVERFLOW_Ignoring.mp3-91a16a9a33694d3b38f5cf25d4b90bff.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

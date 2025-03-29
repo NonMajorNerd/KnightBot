@@ -1,0 +1,15 @@
+[gd_resource type="Theme" load_steps=3 format=3 uid="uid://c0me75w0vbq5a"]
+
+[ext_resource type="FontFile" uid="uid://crjm8ce77hm5c" path="res://_ Assets/Dicier-Flat-Light.otf" id="1_r0r2f"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ljv5h"]
+content_margin_left = 30.0
+content_margin_top = 30.0
+content_margin_right = 30.0
+content_margin_bottom = 30.0
+
+[resource]
+Label/fonts/font = null
+RichTextLabel/colors/default_color = Color(1, 1, 1, 1)
+RichTextLabel/fonts/normal_font = ExtResource("1_r0r2f")
+RichTextLabel/styles/normal = SubResource("StyleBoxEmpty_ljv5h")

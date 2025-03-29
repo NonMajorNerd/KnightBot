@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dvqaasun4loep"
+path="res://.godot/imported/FOM_START_ChampionsSharpenBlades.mp3-bea28a783ca7f99ac63dd8e30b62e014.mp3str"
+
+[deps]
+
+source_file="res://_ Assets/sfx/Voiceovers/FOM_START_ChampionsSharpenBlades.mp3"
+dest_files=["res://.godot/imported/FOM_START_ChampionsSharpenBlades.mp3-bea28a783ca7f99ac63dd8e30b62e014.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://kevhwbvdprw6"
+path="res://.godot/imported/YW_No-ThankYou.mp3-e0154f4c0ca949a80cc4cec1cac99210.mp3str"
+
+[deps]
+
+source_file="res://_ Assets/sfx/Voiceovers/YW_No-ThankYou.mp3"
+dest_files=["res://.godot/imported/YW_No-ThankYou.mp3-e0154f4c0ca949a80cc4cec1cac99210.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

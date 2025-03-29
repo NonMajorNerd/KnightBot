@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bsvtjkgjdcc53"
+path="res://.godot/imported/armor.wav-999673ce63123738ee90e855359e2353.sample"
+
+[deps]
+
+source_file="res://_ Assets/sfx/armor.wav"
+dest_files=["res://.godot/imported/armor.wav-999673ce63123738ee90e855359e2353.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

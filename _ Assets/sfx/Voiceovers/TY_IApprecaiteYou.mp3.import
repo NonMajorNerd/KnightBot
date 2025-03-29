@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bkyxahwcajm5m"
+path="res://.godot/imported/TY_IApprecaiteYou.mp3-d49c82a1ef31fc168bdfec12acbdfe26.mp3str"
+
+[deps]
+
+source_file="res://_ Assets/sfx/Voiceovers/TY_IApprecaiteYou.mp3"
+dest_files=["res://.godot/imported/TY_IApprecaiteYou.mp3-d49c82a1ef31fc168bdfec12acbdfe26.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

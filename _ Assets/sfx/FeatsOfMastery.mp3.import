@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://khm6i8eb1210"
+path="res://.godot/imported/FeatsOfMastery.mp3-fc2a3d4c0832deff84b6d8b2fc92c44a.mp3str"
+
+[deps]
+
+source_file="res://_ Assets/sfx/FeatsOfMastery.mp3"
+dest_files=["res://.godot/imported/FeatsOfMastery.mp3-fc2a3d4c0832deff84b6d8b2fc92c44a.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

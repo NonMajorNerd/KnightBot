@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bh4ka2j2ja7bd"
+path="res://.godot/imported/MISC_BUCKETS_COMMAND_DefenselessNPCs.mp3-3c1dc73b662a25a269028a7500e41bac.mp3str"
+
+[deps]
+
+source_file="res://_ Assets/sfx/Voiceovers/MISC_BUCKETS_COMMAND_DefenselessNPCs.mp3"
+dest_files=["res://.godot/imported/MISC_BUCKETS_COMMAND_DefenselessNPCs.mp3-3c1dc73b662a25a269028a7500e41bac.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

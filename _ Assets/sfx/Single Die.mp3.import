@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dm8tecxcnue5p"
+path="res://.godot/imported/Single Die.mp3-ae1c5029450ef788e82b18020575225f.mp3str"
+
+[deps]
+
+source_file="res://_ Assets/sfx/Single Die.mp3"
+dest_files=["res://.godot/imported/Single Die.mp3-ae1c5029450ef788e82b18020575225f.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

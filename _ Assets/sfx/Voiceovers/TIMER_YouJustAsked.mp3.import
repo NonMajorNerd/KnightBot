@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cwlxhedsnyji5"
+path="res://.godot/imported/TIMER_YouJustAsked.mp3-9dc10eb6782170694da0437ece9254f1.mp3str"
+
+[deps]
+
+source_file="res://_ Assets/sfx/Voiceovers/TIMER_YouJustAsked.mp3"
+dest_files=["res://.godot/imported/TIMER_YouJustAsked.mp3-9dc10eb6782170694da0437ece9254f1.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

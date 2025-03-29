@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://d4i1a0vxtt6y4"
+path="res://.godot/imported/GREETING_Galanith.mp3-b04c04a3f25b4b4560d3a4f33af8c825.mp3str"
+
+[deps]
+
+source_file="res://_ Assets/sfx/Voiceovers/GREETING_Galanith.mp3"
+dest_files=["res://.godot/imported/GREETING_Galanith.mp3-b04c04a3f25b4b4560d3a4f33af8c825.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

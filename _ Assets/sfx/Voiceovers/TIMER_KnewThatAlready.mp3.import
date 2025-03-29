@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dc58ydb0e73g5"
+path="res://.godot/imported/TIMER_KnewThatAlready.mp3-bcf90a4930baa4617400f2a733544dcb.mp3str"
+
+[deps]
+
+source_file="res://_ Assets/sfx/Voiceovers/TIMER_KnewThatAlready.mp3"
+dest_files=["res://.godot/imported/TIMER_KnewThatAlready.mp3-bcf90a4930baa4617400f2a733544dcb.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

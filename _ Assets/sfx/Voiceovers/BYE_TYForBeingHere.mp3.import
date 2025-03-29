@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c2nc4sxvsa1fl"
+path="res://.godot/imported/BYE_TYForBeingHere.mp3-b5f197dd8480acd857dde983a9a21da9.mp3str"
+
+[deps]
+
+source_file="res://_ Assets/sfx/Voiceovers/BYE_TYForBeingHere.mp3"
+dest_files=["res://.godot/imported/BYE_TYForBeingHere.mp3-b5f197dd8480acd857dde983a9a21da9.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

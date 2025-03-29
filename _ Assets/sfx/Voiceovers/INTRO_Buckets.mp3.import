@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dw4vhhyvyxopq"
+path="res://.godot/imported/INTRO_Buckets.mp3-77d2cbf023271142e23df2fb54ec01c9.mp3str"
+
+[deps]
+
+source_file="res://_ Assets/sfx/Voiceovers/INTRO_Buckets.mp3"
+dest_files=["res://.godot/imported/INTRO_Buckets.mp3-77d2cbf023271142e23df2fb54ec01c9.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

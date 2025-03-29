@@ -1,0 +1,268 @@
+[gd_scene load_steps=8 format=3 uid="uid://bgyu3k6ck37u0"]
+
+[ext_resource type="Texture2D" uid="uid://dxk44sasa0wxs" path="res://_ Assets/GFX/UI books & more.png" id="1_fru3i"]
+[ext_resource type="Script" uid="uid://rvcyh3gbxpo" path="res://Components/Character Card/CharacterCard.gd" id="1_q1212"]
+[ext_resource type="FontFile" uid="uid://bhsrjpc302k7w" path="res://_ Assets/Clarity.ttf" id="2_focg2"]
+[ext_resource type="Texture2D" uid="uid://b17qaj8ja8v75" path="res://_ Assets/GFX/Peasant.png" id="3_ornrb"]
+[ext_resource type="Texture2D" uid="uid://c76lkrgiesmr7" path="res://_ Assets/GFX/1stars.png" id="5_jf7dy"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lxcdn"]
+bg_color = Color(0, 0, 0, 0.470588)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(1, 1, 1, 0.509804)
+expand_margin_left = 3.0
+expand_margin_top = 3.0
+expand_margin_right = 3.0
+expand_margin_bottom = 3.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_okbdm"]
+bg_color = Color(0, 0, 0, 0.509804)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(1, 1, 1, 0.509804)
+expand_margin_left = 3.0
+expand_margin_top = 3.0
+expand_margin_right = 3.0
+expand_margin_bottom = 3.0
+
+[node name="CharacterCard" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -710.0
+offset_bottom = -340.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(2, 2)
+script = ExtResource("1_q1212")
+
+[node name="Control" type="Control" parent="."]
+anchors_preset = 0
+
+[node name="NinePatchRect" type="NinePatchRect" parent="Control"]
+texture_filter = 1
+layout_mode = 0
+offset_top = 200.0
+offset_right = 200.0
+offset_bottom = 450.0
+rotation = 4.71239
+texture = ExtResource("1_fru3i")
+region_rect = Rect2(561, 17, 46, 62)
+
+[node name="Character Name" type="Label" parent="Control"]
+layout_mode = 0
+offset_left = 7.5
+offset_top = 12.0
+offset_right = 475.5
+offset_bottom = 70.0
+scale = Vector2(0.5, 0.5)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 6
+theme_override_fonts/font = ExtResource("2_focg2")
+theme_override_font_sizes/font_size = 40
+text = "charname"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Character Title" type="Label" parent="Control"]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 33.0
+offset_right = 474.0
+offset_bottom = 78.0
+scale = Vector2(0.5, 0.5)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 6
+theme_override_fonts/font = ExtResource("2_focg2")
+theme_override_font_sizes/font_size = 30
+text = "ARCHETYPE"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Character Level" type="Label" parent="Control"]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 52.0
+offset_right = 476.0
+offset_bottom = 88.0
+scale = Vector2(0.5, 0.5)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0.901961, 0.901961, 0.901961, 1)
+theme_override_constants/outline_size = 6
+theme_override_fonts/font = ExtResource("2_focg2")
+theme_override_font_sizes/font_size = 24
+text = "Level 1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CharSprite Panel" type="PanelContainer" parent="."]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 75.0
+offset_right = 84.0
+offset_bottom = 139.0
+scale = Vector2(0.8, 0.8)
+theme_override_styles/panel = SubResource("StyleBoxFlat_lxcdn")
+
+[node name="CharacterSprite" type="Sprite2D" parent="CharSprite Panel"]
+texture_filter = 1
+position = Vector2(32, 32)
+scale = Vector2(0.12, 0.12)
+texture = ExtResource("3_ornrb")
+
+[node name="Stars" type="Sprite2D" parent="CharSprite Panel"]
+position = Vector2(31.875, 77.5)
+scale = Vector2(0.13, 0.13)
+texture = ExtResource("5_jf7dy")
+
+[node name="ArtifactSprite Panel" type="PanelContainer" parent="."]
+layout_mode = 0
+offset_left = 180.0
+offset_top = 75.0
+offset_right = 244.0
+offset_bottom = 139.0
+scale = Vector2(0.8, 0.8)
+theme_override_styles/panel = SubResource("StyleBoxFlat_okbdm")
+
+[node name="ArtifactSprite" type="Sprite2D" parent="ArtifactSprite Panel"]
+texture_filter = 1
+position = Vector2(32, 32)
+scale = Vector2(0.12, 0.12)
+
+[node name="Gold" type="Control" parent="."]
+anchors_preset = 0
+offset_left = 15.0
+offset_top = 155.0
+offset_right = 240.0
+offset_bottom = 195.0
+
+[node name="Sprite2D" type="Sprite2D" parent="Gold"]
+texture_filter = 1
+position = Vector2(212, 22)
+scale = Vector2(1.8, 1.8)
+texture = ExtResource("1_fru3i")
+region_enabled = true
+region_rect = Rect2(672, 192, 16, 16)
+
+[node name="Character Gold" type="Label" parent="Gold"]
+texture_filter = 1
+layout_mode = 0
+offset_left = -6.0
+offset_top = 7.0
+offset_right = 403.0
+offset_bottom = 66.0
+scale = Vector2(0.5, 0.5)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0.901961, 0.901961, 0.901961, 1)
+theme_override_constants/outline_size = 6
+theme_override_fonts/font = ExtResource("2_focg2")
+theme_override_font_sizes/font_size = 30
+text = "0"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="Stats" type="Control" parent="."]
+anchors_preset = 0
+offset_left = -25.0
+offset_top = 5.0
+offset_right = 15.0
+offset_bottom = 45.0
+
+[node name="FText" type="Label" parent="Stats"]
+layout_mode = 0
+offset_left = 105.0
+offset_top = 81.0
+offset_right = 160.0
+offset_bottom = 105.0
+scale = Vector2(0.5, 0.5)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0.901961, 0.901961, 0.901961, 1)
+theme_override_constants/outline_size = 6
+theme_override_fonts/font = ExtResource("2_focg2")
+theme_override_font_sizes/font_size = 30
+text = "Fort"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="Fort" type="Label" parent="Stats"]
+layout_mode = 0
+offset_left = 161.0
+offset_top = 77.0
+offset_right = 196.0
+offset_bottom = 108.0
+scale = Vector2(0.5, 0.5)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 6
+theme_override_fonts/font = ExtResource("2_focg2")
+theme_override_font_sizes/font_size = 40
+text = "00"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="RText" type="Label" parent="Stats"]
+layout_mode = 0
+offset_left = 105.0
+offset_top = 108.0
+offset_right = 160.0
+offset_bottom = 139.0
+scale = Vector2(0.5, 0.5)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0.901961, 0.901961, 0.901961, 1)
+theme_override_constants/outline_size = 6
+theme_override_fonts/font = ExtResource("2_focg2")
+theme_override_font_sizes/font_size = 30
+text = "Ref"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="Reflex" type="Label" parent="Stats"]
+layout_mode = 0
+offset_left = 161.0
+offset_top = 107.0
+offset_right = 196.0
+offset_bottom = 138.0
+scale = Vector2(0.5, 0.5)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 6
+theme_override_fonts/font = ExtResource("2_focg2")
+theme_override_font_sizes/font_size = 40
+text = "00"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="WText" type="Label" parent="Stats"]
+layout_mode = 0
+offset_left = 105.0
+offset_top = 137.0
+offset_right = 160.0
+offset_bottom = 168.0
+scale = Vector2(0.5, 0.5)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0.901961, 0.901961, 0.901961, 1)
+theme_override_constants/outline_size = 6
+theme_override_fonts/font = ExtResource("2_focg2")
+theme_override_font_sizes/font_size = 30
+text = "Will"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="Will" type="Label" parent="Stats"]
+layout_mode = 0
+offset_left = 161.0
+offset_top = 137.0
+offset_right = 196.0
+offset_bottom = 168.0
+scale = Vector2(0.5, 0.5)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 6
+theme_override_fonts/font = ExtResource("2_focg2")
+theme_override_font_sizes/font_size = 40
+text = "00"
+horizontal_alignment = 1
+vertical_alignment = 1

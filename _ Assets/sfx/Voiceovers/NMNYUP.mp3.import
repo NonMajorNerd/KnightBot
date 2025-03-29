@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b14uxcf8ow6h4"
+path="res://.godot/imported/NMNYUP.mp3-f816f74d183a77cbe2222ce8f4256dd4.mp3str"
+
+[deps]
+
+source_file="res://_ Assets/sfx/Voiceovers/NMNYUP.mp3"
+dest_files=["res://.godot/imported/NMNYUP.mp3-f816f74d183a77cbe2222ce8f4256dd4.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

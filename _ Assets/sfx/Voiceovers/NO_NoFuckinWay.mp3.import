@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cwlrvkecpwafe"
+path="res://.godot/imported/NO_NoFuckinWay.mp3-652f22e5ff5e1fa468de37cc34e0fff7.mp3str"
+
+[deps]
+
+source_file="res://_ Assets/sfx/Voiceovers/NO_NoFuckinWay.mp3"
+dest_files=["res://.godot/imported/NO_NoFuckinWay.mp3-652f22e5ff5e1fa468de37cc34e0fff7.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

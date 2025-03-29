@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ykfylc25np5a"
+path="res://.godot/imported/Crit Fail.mp3-56df6c9e41207659d35f573a3ea39451.mp3str"
+
+[deps]
+
+source_file="res://_ Assets/sfx/Crit Fail.mp3"
+dest_files=["res://.godot/imported/Crit Fail.mp3-56df6c9e41207659d35f573a3ea39451.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

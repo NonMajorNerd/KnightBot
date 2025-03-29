@@ -1,0 +1,4 @@
+*.uid
+*.godot
+*.dat
+User.gd

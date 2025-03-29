@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://d0p2ycs6d4dwx"
+path="res://.godot/imported/FOM_START_WelcomeOneAndAll.mp3-beec4086d4b9e97cc365191a6671fdc0.mp3str"
+
+[deps]
+
+source_file="res://_ Assets/sfx/Voiceovers/FOM_START_WelcomeOneAndAll.mp3"
+dest_files=["res://.godot/imported/FOM_START_WelcomeOneAndAll.mp3-beec4086d4b9e97cc365191a6671fdc0.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

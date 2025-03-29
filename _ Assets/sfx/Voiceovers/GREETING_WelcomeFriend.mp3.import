@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bv0wyam2alq4"
+path="res://.godot/imported/GREETING_WelcomeFriend.mp3-6d4ce30f51117f07e9fcd0e15bae8d7a.mp3str"
+
+[deps]
+
+source_file="res://_ Assets/sfx/Voiceovers/GREETING_WelcomeFriend.mp3"
+dest_files=["res://.godot/imported/GREETING_WelcomeFriend.mp3-6d4ce30f51117f07e9fcd0e15bae8d7a.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

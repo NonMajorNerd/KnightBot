@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b35igj5dhvrqe"
+path="res://.godot/imported/REDEMPTIONS_KB_ARCHETYPE_NewGear.mp3-031bb946d670252ff1b20f4e4c5bba14.mp3str"
+
+[deps]
+
+source_file="res://_ Assets/sfx/Voiceovers/REDEMPTIONS_KB_ARCHETYPE_NewGear.mp3"
+dest_files=["res://.godot/imported/REDEMPTIONS_KB_ARCHETYPE_NewGear.mp3-031bb946d670252ff1b20f4e4c5bba14.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://0u51ufxw4mob"
+path="res://.godot/imported/StringSymphonicFanfare.mp3-4afdca6bff40d7919bf59bf30f5196b2.mp3str"
+
+[deps]
+
+source_file="res://_ Assets/sfx/StringSymphonicFanfare.mp3"
+dest_files=["res://.godot/imported/StringSymphonicFanfare.mp3-4afdca6bff40d7919bf59bf30f5196b2.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

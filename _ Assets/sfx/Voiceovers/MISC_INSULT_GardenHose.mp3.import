@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cutitjadsbu52"
+path="res://.godot/imported/MISC_INSULT_GardenHose.mp3-db9f011f6fedc181c518fa7b88eddd24.mp3str"
+
+[deps]
+
+source_file="res://_ Assets/sfx/Voiceovers/MISC_INSULT_GardenHose.mp3"
+dest_files=["res://.godot/imported/MISC_INSULT_GardenHose.mp3-db9f011f6fedc181c518fa7b88eddd24.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

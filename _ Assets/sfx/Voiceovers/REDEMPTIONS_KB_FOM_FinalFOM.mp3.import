@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://g583o3j50or7"
+path="res://.godot/imported/REDEMPTIONS_KB_FOM_FinalFOM.mp3-fd1ef66efc7b257da5d9067a028b5aa3.mp3str"
+
+[deps]
+
+source_file="res://_ Assets/sfx/Voiceovers/REDEMPTIONS_KB_FOM_FinalFOM.mp3"
+dest_files=["res://.godot/imported/REDEMPTIONS_KB_FOM_FinalFOM.mp3-fd1ef66efc7b257da5d9067a028b5aa3.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

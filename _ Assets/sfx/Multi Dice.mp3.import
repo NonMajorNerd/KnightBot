@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cv5sqpdfdphs0"
+path="res://.godot/imported/Multi Dice.mp3-746a235807c45ae3d8db9785aa58d89e.mp3str"
+
+[deps]
+
+source_file="res://_ Assets/sfx/Multi Dice.mp3"
+dest_files=["res://.godot/imported/Multi Dice.mp3-746a235807c45ae3d8db9785aa58d89e.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

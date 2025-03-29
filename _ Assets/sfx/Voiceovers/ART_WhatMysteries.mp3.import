@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dsl76l5qdxfn6"
+path="res://.godot/imported/ART_WhatMysteries.mp3-f59359a7fa3f0ccf6ce95f0109f21e38.mp3str"
+
+[deps]
+
+source_file="res://_ Assets/sfx/Voiceovers/ART_WhatMysteries.mp3"
+dest_files=["res://.godot/imported/ART_WhatMysteries.mp3-f59359a7fa3f0ccf6ce95f0109f21e38.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

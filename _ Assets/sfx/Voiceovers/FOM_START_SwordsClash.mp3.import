@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bhlkol64vd5qs"
+path="res://.godot/imported/FOM_START_SwordsClash.mp3-6f963ebd5126d3b64c029a0241830303.mp3str"
+
+[deps]
+
+source_file="res://_ Assets/sfx/Voiceovers/FOM_START_SwordsClash.mp3"
+dest_files=["res://.godot/imported/FOM_START_SwordsClash.mp3-6f963ebd5126d3b64c029a0241830303.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

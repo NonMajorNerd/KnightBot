@@ -1,0 +1,267 @@
+extends Control
+class_name PublicEvent
+
+# chat-gpt prompt
+# I am designing an RPG game which takes place during Twitch Streams using overlays and chat. I am designing a "World Event" system for this game. Please generate three lists which can be combined procedurally to describe in-world events with a Trade theme. The lists should contain 20 entries each, and each entry should be detailed but brief.  The entries need to be generic enough that each entry in the Action and Resolution lists can be combined with any entry in either of the earlier lists. The first list should be an introduction to the event, the second should describe the players actions (referring to the players as 'you' or 'the party') and the third should describe the resolution of the event based on the actions. All three lists should be framed as in-world events, actions, and descriptions.
+
+# often times the results will need to be curated after generation. Particularly the actions - chatGPT likes to say "the party does this OR that" where usually "the party does this AND that" makes more sense in this context
+# trade events seem particularly difficult to generate without logical inconsistencies.
+
+# possible types of events
+var types = ['combat', 'exploration', 'trade', 'environment']
+
+# combat event data
+var combat_init = [		"A rumble shakes the ground as a horde of marauding creatures crests the hill, their war cries echoing through the valley.",
+						"A sudden roar pierces the air as a massive beast emerges from the shadows of the forest, its eyes gleaming with malice.",
+						"A portal of swirling energy tears open in the sky, disgorging a squad of otherworldly invaders.",
+						"A wounded messenger stumbles into view, gasping out a warning of an ambush along the main road.",
+						"A nearby village erupts in flames as raiders descend upon it, their torches blazing in the twilight.",
+						"A cry for help echoes from a distant cave, the voice fraught with terror.",
+						"A long-dormant volcano rumbles ominously, its summit glowing with fiery light as molten creatures emerge.",
+						"A caravan of merchants is under siege by a gang of bandits, their wagons forming a desperate barricade.",
+						"A necromantic ritual has begun at an ancient graveyard, skeletal hands clawing their way from the earth.",
+						"The sky darkens as a swarm of monstrous winged creatures descends upon the town square.",
+						"A dense fog rolls in, obscuring the surroundings as eerie silhouettes close in from all directions.",
+						"An ancient bell tolls in the distance, its mournful sound summoning spectral warriors to the field.",
+						"A shattered airship crashes nearby, disgorging heavily armed mercenaries in search of a mysterious artifact.",
+						"The ground beneath your feet cracks open, revealing a labyrinthine network of tunnels teeming with monstrous creatures.",
+						"A pack of feral beasts, driven mad by an unseen force, rampages through the countryside.",
+						"A corrupted forest springs to life, its trees attacking anyone who strays too close to the edge.",
+						"The sound of drums echoes from a distant mountain pass, heralding the arrival of a warband.",
+						"A colossal shadow moves across the moonlit sky, and moments later, a massive dragon lands with a deafening roar.",
+						"A meteor crashes into the plains, and strange, crystalline creatures emerge from the smoking crater.",
+						"A dark figure appears on the horizon, commanding an army of thralls that march in unison toward your stronghold." ]
+var combat_action = [	" You rally the party and charge headlong into the fray, weapons gleaming.",
+						" The party devises a clever ambush, setting traps to weaken the approaching enemy.",
+						" You confront the leader of the threat directly, aiming to cut off the head of the serpent.",
+						" The party uses magic and ranged attacks to hold the line, keeping the enemy at bay.",
+						" You take a stealthy approach, infiltrating enemy ranks to sow chaos and confusion.",
+						" The party uses their surroundings creatively, triggering a rockslide and using fire to impede the enemy.",
+						" You bolster the spirits of nearby villagers, forming an impromptu militia to join the defense.",
+						" The party focuses on protecting the innocents, shepherding them to safety amidst the chaos.",
+						" You employ diplomacy and subterfuge, attempting to turn factions of the enemy against each other.",
+						" The party engages in a desperate last stand, fighting valiantly to the bitter end.",
+						" The party splits to cover more ground, coordinating an assault on multiple fronts.",
+						" The party unleashes a powerful magical ritual, seeking to neutralize the enemy’s overwhelming numbers.",
+						" You rush to sabotage the enemy’s supplies and disrupt their reinforcements, turning the tide of battle.",
+						" The party takes to the skies and their mounts, gaining a vantage point to strike decisively.",
+						" You engage in a daring rescue operation, retrieving captives and allies from the clutches of the enemy.",
+						" The party employs diversionary tactics, drawing the enemy away from vulnerable targets.",
+						" You lure the enemy into an elaborate trap, using the terrain to your advantage.",
+						" The party calls upon an ally and summons a powerful creature to aid in the fight.",
+						" You infiltrate the enemy’s ranks disguised as one of them, gathering critical intelligence.",
+						" The party hunkers down in a defensible position, relying on sheer determination to outlast the onslaught."]
+var combat_resolution = [	" The enemy is routed, leaving behind a treasure trove of loot and a newfound sense of unity among the survivors.",
+						" The threat is neutralized, but not without significant collateral damage, leaving a bittersweet victory.",
+						" The leader of the enemy is slain, causing their forces to scatter in disarray.",
+						" The day is won, and the grateful locals pledge their support to your cause, offering supplies and reinforcements.",
+						" You barely manage to escape with your lives, vowing to return stronger and better prepared.",
+						" The party’s quick thinking results in a decisive victory, with minimal harm to innocents and property.",
+						" The enemy retreats into the shadows, vowing revenge and leaving behind cryptic warnings of greater threats.",
+						" The conflict ends in a fragile truce, with tensions still simmering beneath the surface.",
+						" Your actions inspire nearby regions to band together, strengthening the resistance against future threats.",
+						" The foe vanishes as quickly as they appeared, leaving behind cryptic remnants and more questions than answers.",
+						" Your bold actions inspire legends, and bards spread tales of your exploits across the land.",
+						" The battlefield is eerily quiet after the fight, the only sound being the faint rustle of the wind through the ruins.",
+						" The enemy’s defeat unlocks access to a previously sealed location, promising untold treasures.",
+						" Your quick thinking averts a disaster, turning what seemed like certain doom into a miraculous victory.",
+						" An unexpected ally arrives in the final moments, turning the tide and cementing a lasting bond.",
+						" You suffer a humiliating defeat but survive, scarred and wiser for the next encounter.",
+						" Your victory sparks fear in your enemies, who will hesitate to challenge you directly in the future."]
+
+var exploration_init = [	"A dense jungle stretches before you, its tangled vines and towering trees concealing ancient ruins.",
+							"A vast desert lies ahead, with shimmering heat mirages obscuring the path to a distant oasis.",
+							"You come upon a crumbling bridge spanning a deep chasm, its stones worn and unstable.",
+							"A faint glow emanates from a cave hidden behind a waterfall, suggesting treasures—or dangers—within.",
+							"A mysterious tower pierces the skyline, its peak shrouded in swirling storm clouds.",
+							"A map etched into a weathered stone points to an uncharted island far across the sea.",
+							"The ruins of an abandoned settlement emerge from the mist, their silence broken only by the rustle of wind.",
+							"A network of subterranean tunnels beckons, their walls glistening with strange luminescence.",
+							"An overgrown path leads to a forgotten shrine, its carvings hinting at a long-lost civilization.",
+							"A celestial event unfolds above you, and a strange energy draws your attention to a hidden valley.",
+							"A thick fog blankets the area, muffling sounds and obscuring the path ahead.",
+							"The entrance to a massive labyrinth stands before you, its walls humming faintly with an unseen energy.",
+							"A mysterious monolith towers over a clearing, its surface engraved with glowing runes.",
+							"A tranquil meadow hides an unusual disturbance—a sinkhole leading deep underground.",
+							"A fleet of abandoned ships lies wrecked on the shore, their hulls splintered but strangely intact.",
+							"An isolated mountain pass promises a shortcut, but ominous tracks suggest it’s not uninhabited.",
+							"A field of peculiar stone statues seems to form a path, though their origin is unclear.",
+							"A small, unmarked village appears on the horizon, its inhabitants behaving strangely.",
+							"A lone watchtower stands in the distance, its light flickering irregularly in the gloom.",
+							"A bubbling hot spring is discovered, but an unnatural chill emanates from its surroundings."]
+var exploration_action = [	" You carefully examine the surroundings, deciphering clues and uncovering hidden pathways.",
+							" The party sets up camp to prepare for the arduous journey ahead, gathering resources and scouting.",
+							" You scale a treacherous cliff, hoping to gain a vantage point to survey the area.",
+							" You navigate through dense vegetation, using tools and wits to clear a path forward.",
+							" The party investigates strange symbols and runes, unraveling their meaning to unlock ancient secrets.",
+							" You construct a makeshift raft to cross a perilous river blocking your progress.",
+							" The party splits up to explore multiple routes, agreeing to rendezvous at a central location.",
+							" You follow the trail of footprints, hoping to learn more about the mysterious inhabitants of the area.",
+							" The party calls on their magic to reveal hidden doors and concealed passages.",
+							" You catalog the unique flora and fauna, searching for clues about the area's history and potential dangers.",
+							" The party devises a method to safely traverse a treacherous series of jagged rocks.",
+							" You climb to the top of a nearby structure to study ancient markings and observe distant landmarks.",
+							" The party tests various mechanisms and pressure plates, unlocking a hidden chamber.",
+							" You carefully collect samples of glowing minerals, hoping to uncover their purpose.",
+							" The party builds a makeshift shelter, weathering a sudden and unexpected storm.",
+							" You decipher an intricate puzzle carved into a nearby wall, revealing a hidden passage.",
+							" The party follows the sound of flowing water, discovering a hidden underground spring.",
+							" You track the source of strange footprints, uncovering a hidden lair.",
+							" The party takes a moment to meditate and attune to the environment, uncovering its subtle energies."]
+var exploration_resolution = [	" You uncover a hidden cache of supplies and artifacts, strengthening your party for the trials ahead.",
+								" The path forward reveals a stunning vista, filling you with renewed determination and awe.",
+								" A sudden rockslide traps you momentarily, but your resourcefulness allows you to escape unscathed.",
+								" The party’s perseverance pays off as they discover an ancient treasure trove brimming with valuable relics.",
+								" A cryptic journal is found, containing an annotated map pointing toward an even greater mystery.",
+								" You successfully avoid a deadly trap, gaining a sense of triumph and relief.",
+								" An unexpected ally emerges from the wilderness, offering guidance and assistance in your quest.",
+								" The area reveals its dangers, and you narrowly escape with your lives, vowing to return better prepared.",
+								" A natural disaster strikes, but your quick thinking ensures the survival of the party and the preservation of vital clues.",
+								" You discover a natural hot spring that revitalizes the party, boosting morale and strength.",
+								" Through your efforts you uncover an enormous hidden chamber, filled with remnants of a forgotten civilization.",
+								" You activate a mechanism that clears the fog, revealing an uncharted path.",
+								" The discovery of rare herbs allows you to concoct powerful potions, enhancing your abilities.",
+								" You uncover evidence of a long-lost expedition, along with their notes and supplies.",
+								" A hidden cache of magical crystals imbues the party with temporary but extraordinary abilities.",
+								" Your exploration leads to the discovery of a rare creature, which grants you its trust.",
+								" A treacherous path collapses behind you, sealing your retreat but uncovering a new, intriguing route forward.",
+								" You return to a previously visited area with newfound knowledge, unlocking secrets that were once hidden."]
+
+var trade_init = [	"A bustling market day has merchants and buyers clamoring for the best deals.",
+					"A heavily guarded caravan arrives in the area, brimming with goods from distant lands.",
+					"A drought has driven up the price of essential supplies, leaving locals desperate.",
+					"Rumors circulate of a treasure-laden merchant ship stranded along the coast.",
+					"A mysterious trader offers exotic items, claiming they hold magical properties.",
+					"A recent harvest surplus floods the market, driving down prices for staple goods.",
+					"A trade dispute between rival factions disrupts the usual flow of goods in the region.",
+					"A black-market dealer sets up shop, offering rare but questionably obtained items.",
+					"A new trading guild begins aggressively undercutting local merchants.",
+					"A wealthy buyer announces they will pay handsomely for rare, high-quality goods.",
+					"A shipment of goods has gone missing, and the traders suspect foul play.",
+					"An upcoming festival sparks increased demand for luxury items and celebratory wares.",
+					"A natural disaster has rerouted a major trade route, leaving merchants scrambling.",
+					"A surge of counterfeit goods in the market causes mistrust among buyers and sellers.",
+					"A shipment of perishable goods risks spoiling due to delays at the docks.",
+					"A trader seeks help negotiating with a local lord to avoid unfair tariffs.",
+					"A strange disease spreads among livestock, threatening a critical food supply chain.",
+					"A distant empire imposes an embargo, cutting off access to previously abundant resources.",
+					"A famed artisan unveils a new invention, drawing crowds and investors to the market."]
+var trade_action = [" You negotiate with traders, calming tensions and ensuring fair dealings.",
+					" The party organizes the efficient distribution of resources, helping stabilize the market.",
+					" You investigate suspicious activity, uncovering hidden threats and schemes.",
+					" The party protects merchants and their goods from potential threats.",
+					" You assist with the transport of goods through dangerous and challenging terrain.",
+					" The party forms alliances with influential merchants to gain leverage in negotiations.",
+					" You help uncover the truth behind rumors to protect the market's integrity.",
+					" The party brokers agreements between rival factions, fostering collaboration.",
+					" You examine wares for quality, ensuring buyers get what they paid for.",
+					" The party scouts new trade routes, seeking safer and faster paths.",
+					" You resolve disputes between buyers and sellers, earning the trust of all involved.",
+					" The party guards valuable goods against theft and sabotage during critical transactions.",
+					" You propose creative solutions to logistical challenges, keeping trade flowing.",
+					" The party leverages their reputation to draw attention to fair trade practices.",
+					" You gather rare materials and comnmodities to fulfill urgent market demands.",
+					" The party works to sway public opinion, encouraging trust and cooperation in the market.",
+					" The party sets up their own stall, participating directly in trade and negotiations."]
+var trade_resolution = [" The marketplace thrives as fair trade practices are restored and upheld.",
+						" The local economy stabilizes, bringing prosperity to merchants and townsfolk alike.",
+						" Your actions uncover a conspiracy, preventing widespread market disruption.",
+						" The traders show their gratitude by offering the party a share of their profits.",
+						" The market resumes smoothly, with disputes resolved and trust restored.",
+						" Rival factions agree to collaborate, creating a stronger trade network in the region.",
+						" New trade routes improve the flow of goods, leading to long-term regional benefits.",
+						" Counterfeit goods are removed from circulation, restoring confidence among buyers.",
+						" A scarcity is averted as resources are distributed fairly and efficiently.",
+						" A rare artifact is sold at auction, with the party benefiting from the sale.",
+						" The merchant guild flourishes under new alliances, boosting their influence and stability.",
+						" Tensions ease among traders, allowing commerce to return to normalcy.",
+						" The market is abuzz with new opportunities, inspired by your innovative solutions.",
+						" A major threat to the economy is averted, preserving livelihoods and resources.",
+						" Merchants offer exclusive deals to the party, recognizing their contributions.",
+						" The party gains valuable allies among influential trade leaders and guilds.",
+						" The economy booms as a new discovery revolutionizes local trade.",
+						" The party’s intervention leaves a lasting legacy of fairness and innovation in the market."]
+
+var env_init = ["A dense fog rolls into the area, reducing visibility and causing confusion.",
+				"A sudden earthquake rocks the region, opening fissures and toppling structures.",
+				"Heavy rains lead to flooding, turning roads into rivers and fields into swamps.",
+				"A wildfire rages in a nearby forest, threatening wildlife and settlements.",
+				"A fierce blizzard blankets the landscape, freezing rivers and obscuring paths.",
+				"The ground trembles as a dormant volcano shows signs of awakening.",
+				"A swarm of locusts descends, devouring crops and leaving devastation in their wake.",
+				"A powerful sandstorm sweeps across the area, engulfing everything in its path.",
+				"A strange glow emanates from a nearby cave, sparking curiosity and fear.",
+				"A rare celestial event causes unusual tides and unpredictable weather.",
+				"A sinkhole forms suddenly, swallowing part of a main road in town.",
+				"The forest grows eerily quiet as wildlife seems to vanish without a trace.",
+				"A previously unknown geyser erupts, spraying hot water and steam into the air.",
+				"A drought sets in, drying up rivers and causing resources to dwindle.",
+				"A massive migration of animals crosses the region, disrupting daily life.",
+				"The moon turns blood-red during an eclipse, spooking superstitious locals.",
+				"Strange, glowing plants begin to sprout across the landscape, baffling scholars.",
+				"A landslide blocks a key path, trapping travelers on either side.",
+				"A mysterious fog brings with it strange sounds and an uneasy feeling.",
+				"A sudden, unnatural chill spreads across the land, freezing crops overnight."]
+var env_action = [	" You work to clear debris and obstacles, ensuring safe passage for travelers.",
+					" The party investigates the source of the disruption, uncovering its origins.",
+					" You guide stranded travelers and animals to safety through hazardous conditions.",
+					" The party reinforces vulnerable structures to prevent further damage.",
+					" You assist with creating barriers and diversions to control the flow of water.",
+					" The party surveys the area for safe routes, avoiding dangerous zones.",
+					" You gather resources and tools to aid in recovery efforts.",
+					" The party communicates with locals, sharing knowledge to help them adapt.",
+					" You document changes in the environment, offering insights for future protection.",
+					" The party searches for survivors and lost belongings in the affected area.",
+					" You help relocate people and animals to safer areas, preserving lives.",
+					" The party combats any opportunistic threats that emerge during the disaster.",
+					" You use your skills to stabilize the environment, repairing damage and mitigating risks.",
+					" The party collaborates with experts and leaders to form an effective response plan.",
+					" You investigate strange phenomena, determining whether they are natural or magical.",
+					" The party gathers supplies for the community, ensuring they can weather the crisis.",
+					" The party deftly weidls their magic to keep the effects on the local environment under control.",
+					" The party scouts out potential risks, ensuring the area is safe for further action.",
+					" You calm panicked individuals, helping restore order amid the chaos.",
+					" The party experiments with innovative solutions to overcome the challenges presented."]
+var env_resolution = [	" The affected area stabilizes, and normal life begins to return with newfound resilience.",
+						" Safe passage is restored, allowing travel and trade to resume as usual.",
+						" The community comes together, stronger and better prepared for future challenges.",
+						" Valuable resources are uncovered in the aftermath, aiding the region.",
+						" Lives are saved, and the party is hailed as heroes for their efforts.",
+						" A clearer understanding of the event’s cause leads to preventative measures being enacted.",
+						" Damaged structures are repaired, and the settlement is fortified for future safety.",
+						" Order is restored, and the region’s inhabitants grow more confident in facing adversity.",
+						" The area is declared safe for habitation, encouraging growth and development.",
+						" Wildlife returns, and the ecosystem begins to heal under the community's care.",
+						" A new path is uncovered, opening opportunities for exploration.",
+						" The event leaves a lasting change in the environment, inspiring new traditions and stories.", 
+						" The disaster fosters alliances between groups that were once divided.",
+						" The community thrives as innovative solutions to the crisis improve daily life.",
+						" Nature begins to recover, with signs of growth and renewal evident in the landscape.",
+						" Survivors are reunited with loved ones, creating a sense of hope and celebration.",
+						" Resources are redistributed, ensuring fairness and stability in the region.",
+						" The party’s actions inspire others to take proactive measures in protecting the environment.",
+						" The region gains renown for its resilience, attracting new settlers and adventurers."]
+
+@onready var myAudio:AudioStreamPlayer = $AudioStreamPlayer
+var peSFX = ["DramaticSymphonicHornFanfare.mp3", "StringSymphonicFanfare.mp3", "SymphonicHornFanfare.mp3"]
+
+func playSFX(index:int=99):
+	if index != 99: myAudio.stream = load("res://_ Assets/sfx/" + peSFX[index])
+	else: myAudio.stream = load("res://_ Assets/sfx/" + peSFX.pick_random())
+	myAudio.play()
+
+func generateEvent(choice:String="Random"):
+	var result:String = ""
+	if choice == "Random": choice = types.pick_random()
+	
+	match choice:
+		"combat":		result = combat_init.pick_random() + combat_action.pick_random() + combat_resolution.pick_random()
+		"exploration": 	result = exploration_init.pick_random() + exploration_action.pick_random() + exploration_resolution.pick_random()
+		"trade": 		result = trade_init.pick_random() + trade_action.pick_random() + trade_resolution.pick_random()
+		"environment": 	result = env_init.pick_random() + env_action.pick_random() + env_resolution.pick_random()
+		
+	return result
+
+func _ready():
+	for x in 10:
+		print(generateEvent(), "\n")

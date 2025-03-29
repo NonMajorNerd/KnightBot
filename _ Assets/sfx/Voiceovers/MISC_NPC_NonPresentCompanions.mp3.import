@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://clbpavdi23dbq"
+path="res://.godot/imported/MISC_NPC_NonPresentCompanions.mp3-cd968e16e31a2654ddb5c6b9909237d0.mp3str"
+
+[deps]
+
+source_file="res://_ Assets/sfx/Voiceovers/MISC_NPC_NonPresentCompanions.mp3"
+dest_files=["res://.godot/imported/MISC_NPC_NonPresentCompanions.mp3-cd968e16e31a2654ddb5c6b9909237d0.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

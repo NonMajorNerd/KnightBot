@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bjb5wyvc22n4h"
+path="res://.godot/imported/TY_YoureMuchTooKind.mp3-af3ba3c4c8dd9e7bce565c0bce8a82af.mp3str"
+
+[deps]
+
+source_file="res://_ Assets/sfx/Voiceovers/TY_YoureMuchTooKind.mp3"
+dest_files=["res://.godot/imported/TY_YoureMuchTooKind.mp3-af3ba3c4c8dd9e7bce565c0bce8a82af.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

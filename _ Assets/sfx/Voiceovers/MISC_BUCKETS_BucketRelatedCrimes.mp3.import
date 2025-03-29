@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bw8h66lf11yx1"
+path="res://.godot/imported/MISC_BUCKETS_BucketRelatedCrimes.mp3-9a7fdee5033e6a43a6e07ed580c7e516.mp3str"
+
+[deps]
+
+source_file="res://_ Assets/sfx/Voiceovers/MISC_BUCKETS_BucketRelatedCrimes.mp3"
+dest_files=["res://.godot/imported/MISC_BUCKETS_BucketRelatedCrimes.mp3-9a7fdee5033e6a43a6e07ed580c7e516.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

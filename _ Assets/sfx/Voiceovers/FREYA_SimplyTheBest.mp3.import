@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://1ffm8a5tjisa"
+path="res://.godot/imported/FREYA_SimplyTheBest.mp3-264164192019e6342cb786fcb18f2bed.mp3str"
+
+[deps]
+
+source_file="res://_ Assets/sfx/Voiceovers/FREYA_SimplyTheBest.mp3"
+dest_files=["res://.godot/imported/FREYA_SimplyTheBest.mp3-264164192019e6342cb786fcb18f2bed.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

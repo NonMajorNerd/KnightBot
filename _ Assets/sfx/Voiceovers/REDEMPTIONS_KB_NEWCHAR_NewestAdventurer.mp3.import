@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cevx2xr0f4o4i"
+path="res://.godot/imported/REDEMPTIONS_KB_NEWCHAR_NewestAdventurer.mp3-8e5401142f1023064d41c23a37c0bff4.mp3str"
+
+[deps]
+
+source_file="res://_ Assets/sfx/Voiceovers/REDEMPTIONS_KB_NEWCHAR_NewestAdventurer.mp3"
+dest_files=["res://.godot/imported/REDEMPTIONS_KB_NEWCHAR_NewestAdventurer.mp3-8e5401142f1023064d41c23a37c0bff4.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

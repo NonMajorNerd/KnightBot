@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://chevu3h75yujl"
+path="res://.godot/imported/SymphonicHornFanfare.mp3-90b00725ae3cffe9a4b5edf83ed3e116.mp3str"
+
+[deps]
+
+source_file="res://_ Assets/sfx/SymphonicHornFanfare.mp3"
+dest_files=["res://.godot/imported/SymphonicHornFanfare.mp3-90b00725ae3cffe9a4b5edf83ed3e116.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

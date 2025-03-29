@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bdvi6pb5k2tip"
+path="res://.godot/imported/SPACE_LOOP_AnotherLoop.mp3-39ee41833b5ab0adf8fbce829931e413.mp3str"
+
+[deps]
+
+source_file="res://_ Assets/sfx/Voiceovers/SPACE_LOOP_AnotherLoop.mp3"
+dest_files=["res://.godot/imported/SPACE_LOOP_AnotherLoop.mp3-39ee41833b5ab0adf8fbce829931e413.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

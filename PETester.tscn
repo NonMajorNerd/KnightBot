@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://camkpffqu18lu"]
+
+[ext_resource type="Script" uid="uid://didp4pypk6d5q" path="res://Components/Public Event.gd" id="1_iu2ur"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_iu2ur")

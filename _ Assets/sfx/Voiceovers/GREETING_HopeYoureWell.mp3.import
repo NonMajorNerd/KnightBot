@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://j03vukoqhtiu"
+path="res://.godot/imported/GREETING_HopeYoureWell.mp3-c3bb6e4523dfbdf586c4bc1980376be4.mp3str"
+
+[deps]
+
+source_file="res://_ Assets/sfx/Voiceovers/GREETING_HopeYoureWell.mp3"
+dest_files=["res://.godot/imported/GREETING_HopeYoureWell.mp3-c3bb6e4523dfbdf586c4bc1980376be4.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dp6danjaexrxw"
+path="res://.godot/imported/SPACE_LOOP_ShameShameShame.mp3-680675a5c9bff448413d6cc0a2fbd2ec.mp3str"
+
+[deps]
+
+source_file="res://_ Assets/sfx/Voiceovers/SPACE_LOOP_ShameShameShame.mp3"
+dest_files=["res://.godot/imported/SPACE_LOOP_ShameShameShame.mp3-680675a5c9bff448413d6cc0a2fbd2ec.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

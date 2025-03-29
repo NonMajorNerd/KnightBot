@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dra51pqrdlhdi"
+path="res://.godot/imported/REDEMPTIONS_FIRST_ExcitedOrEmbarrassed.mp3-0865898587e6f826722bf6ff8fee756b.mp3str"
+
+[deps]
+
+source_file="res://_ Assets/sfx/Voiceovers/REDEMPTIONS_FIRST_ExcitedOrEmbarrassed.mp3"
+dest_files=["res://.godot/imported/REDEMPTIONS_FIRST_ExcitedOrEmbarrassed.mp3-0865898587e6f826722bf6ff8fee756b.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

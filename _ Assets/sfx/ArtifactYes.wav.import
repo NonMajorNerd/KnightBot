@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cuewgk0fe0yl3"
+path="res://.godot/imported/ArtifactYes.wav-0ce3f039dd222adb6ec3b6ce7f1c67b7.sample"
+
+[deps]
+
+source_file="res://_ Assets/sfx/ArtifactYes.wav"
+dest_files=["res://.godot/imported/ArtifactYes.wav-0ce3f039dd222adb6ec3b6ce7f1c67b7.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

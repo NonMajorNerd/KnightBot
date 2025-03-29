@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cmwtyg4bm6tev"
+path="res://.godot/imported/MISC_BUCKETS_StrictNoBuckets.mp3-09dabd9b4e5673e2ed822cbb0823f746.mp3str"
+
+[deps]
+
+source_file="res://_ Assets/sfx/Voiceovers/MISC_BUCKETS_StrictNoBuckets.mp3"
+dest_files=["res://.godot/imported/MISC_BUCKETS_StrictNoBuckets.mp3-09dabd9b4e5673e2ed822cbb0823f746.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

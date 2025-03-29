@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bhnwlxa1hhvr2"
+path="res://.godot/imported/GREETING_NonMajorNerd.mp3-5aab0f1d0ccb7aea6b24114c86cc6042.mp3str"
+
+[deps]
+
+source_file="res://_ Assets/sfx/Voiceovers/GREETING_NonMajorNerd.mp3"
+dest_files=["res://.godot/imported/GREETING_NonMajorNerd.mp3-5aab0f1d0ccb7aea6b24114c86cc6042.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

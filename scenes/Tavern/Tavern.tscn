@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://ce1njt3f5haxc"]
+
+[ext_resource type="Script" uid="uid://brn614knf03di" path="res://scenes/Tavern/Tavern.gd" id="1_b3m4s"]
+[ext_resource type="AudioStream" uid="uid://dagbp2v5l501y" path="res://_ Assets/sfx/TavernTune.mp3" id="2_wwkgv"]
+
+[node name="Tavern" type="Node2D"]
+script = ExtResource("1_b3m4s")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("2_wwkgv")
+bus = &"SFX"

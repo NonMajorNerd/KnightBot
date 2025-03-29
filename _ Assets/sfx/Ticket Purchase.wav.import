@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://d1ag383lo3udb"
+path="res://.godot/imported/Ticket Purchase.wav-a65bc5978725b08155fa5d9b2bb26b35.sample"
+
+[deps]
+
+source_file="res://_ Assets/sfx/Ticket Purchase.wav"
+dest_files=["res://.godot/imported/Ticket Purchase.wav-a65bc5978725b08155fa5d9b2bb26b35.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

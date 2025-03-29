@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://373ft4muvit7"
+path="res://.godot/imported/REDEMPTIONS_SH_BasicallyPlants.mp3-89546485ca7c3674befb475a75f7dc3f.mp3str"
+
+[deps]
+
+source_file="res://_ Assets/sfx/Voiceovers/REDEMPTIONS_SH_BasicallyPlants.mp3"
+dest_files=["res://.godot/imported/REDEMPTIONS_SH_BasicallyPlants.mp3-89546485ca7c3674befb475a75f7dc3f.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

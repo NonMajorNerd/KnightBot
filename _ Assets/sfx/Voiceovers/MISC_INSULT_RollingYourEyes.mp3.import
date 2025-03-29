@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c7fkg3ip80e62"
+path="res://.godot/imported/MISC_INSULT_RollingYourEyes.mp3-a42eb08b01d2f118c51bef081288ba87.mp3str"
+
+[deps]
+
+source_file="res://_ Assets/sfx/Voiceovers/MISC_INSULT_RollingYourEyes.mp3"
+dest_files=["res://.godot/imported/MISC_INSULT_RollingYourEyes.mp3-a42eb08b01d2f118c51bef081288ba87.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

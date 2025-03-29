@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dbtuq0jlp3ftw"
+path="res://.godot/imported/ART_WhatTreasures.mp3-01ac8b7ebfd704c2db521554903be3cd.mp3str"
+
+[deps]
+
+source_file="res://_ Assets/sfx/Voiceovers/ART_WhatTreasures.mp3"
+dest_files=["res://.godot/imported/ART_WhatTreasures.mp3-01ac8b7ebfd704c2db521554903be3cd.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

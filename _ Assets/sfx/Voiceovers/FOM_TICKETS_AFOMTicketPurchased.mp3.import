@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cibi23jgyuxof"
+path="res://.godot/imported/FOM_TICKETS_AFOMTicketPurchased.mp3-8fa6d8d9d0a1ebd70cd63d3e69114102.mp3str"
+
+[deps]
+
+source_file="res://_ Assets/sfx/Voiceovers/FOM_TICKETS_AFOMTicketPurchased.mp3"
+dest_files=["res://.godot/imported/FOM_TICKETS_AFOMTicketPurchased.mp3-8fa6d8d9d0a1ebd70cd63d3e69114102.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bwmutheq6dpa6"
+path="res://.godot/imported/Cheer.mp3-39cdd4b1777c0ffa47614bd37e50cafc.mp3str"
+
+[deps]
+
+source_file="res://_ Assets/sfx/Cheer.mp3"
+dest_files=["res://.godot/imported/Cheer.mp3-39cdd4b1777c0ffa47614bd37e50cafc.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

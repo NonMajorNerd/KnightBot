@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dqg21b54a7u3y"
+path="res://.godot/imported/MISC_INSULT_Before.mp3-027a22233d9576ad3b8ae11b187a7104.mp3str"
+
+[deps]
+
+source_file="res://_ Assets/sfx/Voiceovers/MISC_INSULT_Before.mp3"
+dest_files=["res://.godot/imported/MISC_INSULT_Before.mp3-027a22233d9576ad3b8ae11b187a7104.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

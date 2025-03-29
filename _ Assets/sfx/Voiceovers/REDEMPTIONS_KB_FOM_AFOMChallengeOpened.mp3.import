@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cljhbftc7v0q7"
+path="res://.godot/imported/REDEMPTIONS_KB_FOM_AFOMChallengeOpened.mp3-3b9e7f02fe70aaa6d859a0b4971666a3.mp3str"
+
+[deps]
+
+source_file="res://_ Assets/sfx/Voiceovers/REDEMPTIONS_KB_FOM_AFOMChallengeOpened.mp3"
+dest_files=["res://.godot/imported/REDEMPTIONS_KB_FOM_AFOMChallengeOpened.mp3-3b9e7f02fe70aaa6d859a0b4971666a3.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

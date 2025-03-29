@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cil05nt27qxxn"
+path="res://.godot/imported/MISC_NPC_MischievousBots.mp3-6cb12ad37a46d2570e967cf422b599d0.mp3str"
+
+[deps]
+
+source_file="res://_ Assets/sfx/Voiceovers/MISC_NPC_MischievousBots.mp3"
+dest_files=["res://.godot/imported/MISC_NPC_MischievousBots.mp3-6cb12ad37a46d2570e967cf422b599d0.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

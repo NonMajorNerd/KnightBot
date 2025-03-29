@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dbsweto6uif8u"
+path="res://.godot/imported/FOM_START_LadiesAndGentlemen.mp3-9b9992647fc9eacbee6a09dd0512e69e.mp3str"
+
+[deps]
+
+source_file="res://_ Assets/sfx/Voiceovers/FOM_START_LadiesAndGentlemen.mp3"
+dest_files=["res://.godot/imported/FOM_START_LadiesAndGentlemen.mp3-9b9992647fc9eacbee6a09dd0512e69e.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

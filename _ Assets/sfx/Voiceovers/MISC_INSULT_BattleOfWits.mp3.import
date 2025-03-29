@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://di36tlrxj8wqt"
+path="res://.godot/imported/MISC_INSULT_BattleOfWits.mp3-ac1314ed5d6abd843ed6ddc61eb863ba.mp3str"
+
+[deps]
+
+source_file="res://_ Assets/sfx/Voiceovers/MISC_INSULT_BattleOfWits.mp3"
+dest_files=["res://.godot/imported/MISC_INSULT_BattleOfWits.mp3-ac1314ed5d6abd843ed6ddc61eb863ba.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

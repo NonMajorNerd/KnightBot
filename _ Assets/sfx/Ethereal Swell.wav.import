@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://nh1h3r6eb246"
+path="res://.godot/imported/Ethereal Swell.wav-cc6a9cb0f25bae7ec0aa0b3143be0471.sample"
+
+[deps]
+
+source_file="res://_ Assets/sfx/Ethereal Swell.wav"
+dest_files=["res://.godot/imported/Ethereal Swell.wav-cc6a9cb0f25bae7ec0aa0b3143be0471.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

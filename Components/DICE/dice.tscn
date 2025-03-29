@@ -1,0 +1,41 @@
+[gd_scene load_steps=5 format=3 uid="uid://dfyc2q0g0vqmi"]
+
+[ext_resource type="Script" uid="uid://dsiuk3m1g0p1r" path="res://Components/DICE/dice.gd" id="1_4ts1w"]
+[ext_resource type="Theme" uid="uid://c0me75w0vbq5a" path="res://_ Assets/default_theme.tres" id="2_knklc"]
+[ext_resource type="AudioStream" uid="uid://dm8tecxcnue5p" path="res://_ Assets/sfx/Single Die.mp3" id="3_j6miy"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7kixv"]
+size = Vector2(181, 181)
+
+[node name="Dice" type="RigidBody2D"]
+gravity_scale = 0.0
+script = ExtResource("1_4ts1w")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+texture_filter = 1
+offset_left = -30.0
+offset_top = -30.0
+offset_right = 270.0
+offset_bottom = 270.0
+theme = ExtResource("2_knklc")
+theme_override_font_sizes/normal_font_size = 200
+bbcode_enabled = true
+text = "1"
+
+[node name="Animation" type="Timer" parent="."]
+wait_time = 0.1
+
+[node name="Rolling" type="Timer" parent="."]
+wait_time = 2.0
+one_shot = true
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_j6miy")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2(90.5, 91.5)
+shape = SubResource("RectangleShape2D_7kixv")
+
+[connection signal="timeout" from="Animation" to="." method="_on_animation_timeout"]
+[connection signal="timeout" from="Rolling" to="." method="_on_rolling_timeout"]

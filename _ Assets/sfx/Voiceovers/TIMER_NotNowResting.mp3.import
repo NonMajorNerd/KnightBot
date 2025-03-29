@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bx34h47qy2uny"
+path="res://.godot/imported/TIMER_NotNowResting.mp3-97e56e40ce9dd92a5673a60241f81747.mp3str"
+
+[deps]
+
+source_file="res://_ Assets/sfx/Voiceovers/TIMER_NotNowResting.mp3"
+dest_files=["res://.godot/imported/TIMER_NotNowResting.mp3-97e56e40ce9dd92a5673a60241f81747.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

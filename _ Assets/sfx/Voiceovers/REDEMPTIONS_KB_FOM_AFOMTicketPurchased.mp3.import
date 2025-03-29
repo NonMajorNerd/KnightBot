@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://t4bw5l4tcxff"
+path="res://.godot/imported/REDEMPTIONS_KB_FOM_AFOMTicketPurchased.mp3-adfbd6318b3a8f9b8e7c418be467a08b.mp3str"
+
+[deps]
+
+source_file="res://_ Assets/sfx/Voiceovers/REDEMPTIONS_KB_FOM_AFOMTicketPurchased.mp3"
+dest_files=["res://.godot/imported/REDEMPTIONS_KB_FOM_AFOMTicketPurchased.mp3-adfbd6318b3a8f9b8e7c418be467a08b.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

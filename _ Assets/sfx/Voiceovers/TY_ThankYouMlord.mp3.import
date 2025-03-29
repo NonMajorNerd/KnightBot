@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bllh8xjf3dach"
+path="res://.godot/imported/TY_ThankYouMlord.mp3-75a4a37e40451173f784099aec5b547f.mp3str"
+
+[deps]
+
+source_file="res://_ Assets/sfx/Voiceovers/TY_ThankYouMlord.mp3"
+dest_files=["res://.godot/imported/TY_ThankYouMlord.mp3-75a4a37e40451173f784099aec5b547f.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
