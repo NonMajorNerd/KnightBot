@@ -5,21 +5,20 @@ var DEBUG:bool = true
 var phase = 0
 var pathSaveLoad = "res://_ Data/CharacterData.dat"
 var iconPhase = 0
-
 var artifactPool:Array = []
-
 var randNames:Array = []
 
 @onready var myFileController:FileController = FileController.new() 
+@onready var myEventSubController = $API/EventSub
+@onready var myHelixController = $API/Helix
 @onready var myIRCController = $API/IRC
-@onready var myPubSubController = $API/Pubsub
+@onready var myPubSubController = $API/PubSub
 @onready var myValidationController = $API/TokenValidation
+
 @onready var myFoMController = $"FoM Controller"
 @onready var myTavernController = $Tavern
 @onready var myNameGenerator = $NameGen
 @onready var myTextAudioBrain = $TABrain
-@onready var myHelixController = $API/Helix
-
 @onready var myAdminPanel = $Admin
 @onready var myIconPanel = $"KB Slider Control"
 @onready var myIconTimer = $"KB Slider Control/Timer"

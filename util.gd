@@ -9,6 +9,8 @@ func prefix(type:String="B", timestamp:bool=true):
 	if timestamp: result += str(Time.get_time_string_from_system())
 	
 	if type == "B": result += 		"  [BOT] "
+	elif type == "EU": result += 	" [EVT▲]"
+	elif type == "ED": result += 	" [EVT▼]"
 	elif type == "HU": result += 	" [HLX▲]"
 	elif type == "HD": result += 	" [HLX▼]"
 	elif type == "IU": result += 	" [IRC▲] "

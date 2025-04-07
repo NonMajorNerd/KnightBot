@@ -1,5 +1,6 @@
 extends Node2D
 
+# PUBSUB WAS DEPRECIATED APRIL 2024, AND DECOMISSIONED 04/15/25 	
 
 @onready var myPingTimer: Timer = $PingTimer
 @onready var myUser = get_parent().get_node("User")
@@ -56,7 +57,6 @@ func _process(_delta):
 			var reason = _pubsub_client.get_close_reason()
 			if DEBUG: util.debugPrint("B", true,  "WebSocket closed with code: %d, reason %s. Clean: %s" % [code, reason, code != -1])
 			set_process(false) # Stop processing.
-			
 
 
 # returns the following dictionary based on a channel point redemption
@@ -68,7 +68,6 @@ func pubsub_on_data(packet:String):
 		var smallPacket = packet
 		if len(smallPacket) > 100: smallPacket = smallPacket.left(100) + "..."
 		print(util.prefix("PD") + smallPacket.strip_escapes().strip_edges())
-
 	
 	var repackaged:Dictionary = JSON.parse_string(packet)
 	
@@ -98,8 +97,8 @@ func pubsub_on_data(packet:String):
 #					else: if DEBUG:print(util.prefix("B"), "repackaged>data>message>data>redemption")
 #				else: if DEBUG: print(util.prefix("B"), "repackaged>data>message>data")
 #			else: if DEBUG: print(util.prefix("B"), "repackaged>data>message")
-#		else: if DEBUG: print(util.prefix("B"), "repackaged>data")
 #	else: if DEBUG: print(util.prefix("B"), "repackaged")
+#		else: if DEBUG: print(util.prefix("B"), "repackaged>data")
 
 	return(repackaged)
 	
